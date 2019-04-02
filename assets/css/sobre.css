@@ -1,0 +1,141 @@
+@font-face{
+    font-family: Pacifico;
+    src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
+  }
+@font-face{
+    font-family: Alfa_Slab_One;
+    src: url(../fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf);
+  }
+  
+  
+  body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+    align-items: center;
+  }
+  
+  nav{
+    width: 100%;
+    background: rgb(27, 85, 89);
+    position: relative;
+  }
+  
+  ul{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    transition: 0.5s top, ease;
+  }
+  
+  ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 30px;
+    transition: 3s ease;
+    background-color: rgb(23, 85, 89); 
+  }
+  
+  ul li:hover{
+    background: black;
+    border-color: white;
+  }
+  
+  ul li a{
+    font-family: Pacifico;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .toggle{
+    width: 100%;
+    padding: 10px 20px;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 20px;
+    display: none;
+  }
+  
+  @media(max-width: 715px){
+    .toggle{
+      display: block;
+    }
+  
+    ul{
+      width: 100%;
+    }
+  
+    ul li{
+      display: block;
+      text-align: center;
+      margin: solid 1px white;
+    }
+    .hidden-menu {
+    position: absolute;
+    top: -450px;
+  }
+  }
+  
+  .pimg1{
+    position:relative;
+    background-position:center;
+    background-size:370px;
+    background-repeat:repeat;
+    background-image:url(../img/self.jpg);
+    min-height:450px; 
+    box-shadow: 0 3px 10px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    margin: .7% 5%;
+  }
+  
+  .ptext{
+    font-family:  Alfa_Slab_One;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:black;
+    font-size: 20px;
+    letter-spacing:3px;
+  }
+
+  .ptext .border{
+    display: block;
+    background-color: black;
+    color: #fff;
+    padding: 1%;
+  }
+
+  .description{
+    text-align: justify;
+    padding:4% 8%;
+    overflow: hidden;
+    color:#666;
+    font-size: 100%;
+  }
+
+  .description p{
+    font-family: Alfa_Slab_One;
+    margin: 0;
+    text-indent: 2em;
+  }
+  
+  h1{
+    font-family: Pacifico;
+    text-align: center;
+  }
+
+  footer{
+    text-align:center;
+  }
+
+   @media(max-width:10px){
+    .pimg1{
+      background-attachment:scroll;
+    }
+  }
